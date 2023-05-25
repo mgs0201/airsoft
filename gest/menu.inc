@@ -44,7 +44,6 @@ echo '
           <li class="nav-item"> <a class="nav-link" href="contacto.php">Contacto</a> </li>
           <li class="nav-item"> <a class="nav-link" href="ayuda.php">Ayuda</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#"></a> </li>          
-          <li class="nav-item"> <a class="nav-link" href="#">ENTRAR</a> </li>
         </ul>
           ';
 		 

@@ -24,7 +24,7 @@
 $Servidor_conexion = "localhost";
 $login_conexion = "root";
 $password_conexion = "";
-$base = "AIRSOFT"; // Entre comillas debe aparecer el nombre del esquema de BD.
+$base = "airsoft"; // Entre comillas debe aparecer el nombre del esquema de BD.
 
 # Selección de la base de datos y conexión 
 

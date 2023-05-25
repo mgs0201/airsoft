@@ -6,7 +6,7 @@
       <div class="container">
         <div class="row text-center">
 		   <div class="text-center mx-auto col-10">
-			<h2> GESTIÓN DE MIEMRBOS</h2>	
+			<h2> GESTIÓN DE MIEMBROS</h2>	
 		   </div>		
 		</div>	
 		<div class="row text-center">	
@@ -34,7 +34,7 @@
 			echo "<th>";
 			// Formulario para enviar los datos
 				echo '<form name="alta" method="POST" action="A-miembros.php">';
-				echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
+			//	echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
 				echo '<input type="image" src="estilos/iconos/plus-circle.svg" height="20px">';
 				echo '</form>';
 			echo "</th>";
@@ -65,14 +65,14 @@
 				echo "<td align='center'>";
 					// Para ver solo un registro.
 					// Formulario para enviar los datos
-						echo '<form name="veruno" method="POST" action="VerUno.php">';
+						echo '<form name="veruno" method="POST" action="VerMiembro.php">';
 						echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
 						echo '<input type="image" src="estilos/iconos/eye.svg">';
 						echo '</form>';
 				echo "</td><td align='center'>";		
 					// Para borrar un registro.
 					// Formulario para enviar los datos
-						echo '<form name="borraruno" method="POST" action="BorrarUno.php">';
+						echo '<form name="borraruno" method="POST" action="BorrarMiembro.php">';
 						echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
 						echo '<input type="image" src="estilos/iconos/trash.svg">';
 						echo '</form>';

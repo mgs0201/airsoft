@@ -1,5 +1,20 @@
 ﻿<?php
 	require_once('marcosup.php');
+
+	// Este código hay que pegarlo justo al incluir el marcosup
+			// --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+			// Código para ordenar por las columnas
+			
+			// Establece una variable de ORDENACIÓN para elegir la columna por la que quiere ordenar
+			// Define el orden de la consulta por NOMBRE DE ALUMNO como valor por defecto.
+			$orden = "CIF ASC"; 
+			// Variable texto para ventana modal de avisos
+			//$texto = "";		
+			// Comprueba si viene (por el método GET) un valor elegido por el usuario. En caso afirmativo lo cambia
+				if (isset($_GET['orden'])) 
+					{
+						$orden=$_GET['orden'];
+					}
 	
 ?>
     <div class="section">
@@ -21,6 +36,9 @@
             
             // Dibujamos una tabla HTML para mostrar los valores almacenados
             echo "<table border='1'>";
+
+			// Añade el orden a la sentencia
+			$sentencia .= " order by $orden ";
             
             // Recopilar los nombres de las columnas de la tabla seleccionada
             $cabeceras=mysqli_query($c,"SHOW FIELDS FROM $tabla");
@@ -34,7 +52,7 @@
 			echo "<th>";
 			// Formulario para enviar los datos
 				echo '<form name="alta" method="POST" action="A-clubes.php">';
-				echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
+			//	echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
 				echo '<input type="image" src="estilos/iconos/plus-circle.svg" height="20px">';
 				echo '</form>';
 			echo "</th>";
@@ -65,14 +83,14 @@
 				echo "<td align='center'>";
 					// Para ver solo un registro.
 					// Formulario para enviar los datos
-						echo '<form name="veruno" method="POST" action="VerUno.php">';
+						echo '<form name="veruno" method="POST" action="VerClub.php">';
 						echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
 						echo '<input type="image" src="estilos/iconos/eye.svg">';
 						echo '</form>';
 				echo "</td><td align='center'>";		
 					// Para borrar un registro.
 					// Formulario para enviar los datos
-						echo '<form name="borraruno" method="POST" action="BorrarUno.php">';
+						echo '<form name="borraruno" method="POST" action="BorrarClub.php">';
 						echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
 						echo '<input type="image" src="estilos/iconos/trash.svg">';
 						echo '</form>';

@@ -33,13 +33,13 @@
 		echo "<tr><td>Apellidos: </td><td><b>",$d3,"</b></td></tr>";
 		echo "<tr><td>Fecha de Nacimiento: </td><td><b>",$d4,"</b></td></tr>";
 		echo "<tr><td>Teléfono: </td><td><b>",$d5,"</b></td></tr>";
-        echo "<tr><td>Mail: </td><td><b>",$d6,"</b></td></tr>";
-        echo "<tr><td>Cuota: </td><td><b>",$d7,"</b></td></tr>";
-        echo "<tr><td>Alquiler: </td><td><b>",$d8,"</b></td></tr>";
-        echo "<tr><td>Foto: </td><td><b>",$d9,"</b></td></tr>";
-        echo "<tr><td>Líder: </td><td><b>",$d10,"</b></td></tr>";
-        echo "<tr><td>CIF de club: </td><td><b>",$d11,"</b></td></tr>";
-        echo "</table>";
+    	echo "<tr><td>Mail: </td><td><b>",$d6,"</b></td></tr>";
+    	echo "<tr><td>Cuota: </td><td><b>",$d7,"</b></td></tr>";
+    	echo "<tr><td>Alquiler: </td><td><b>",$d8,"</b></td></tr>";
+    	echo "<tr><td>Foto: </td><td><b>",$d9,"</b></td></tr>";
+    	echo "<tr><td>Líder: </td><td><b>",$d10,"</b></td></tr>";
+    	echo "<tr><td>CIF de club: </td><td><b>",$d11,"</b></td></tr>";
+    	echo "</table>";
    
 		// Indica la tabla sobre la que va a realizar la operación de alta
 		$tabla="miembro"; // Entre comillas indicamos el nombre de la tabla
@@ -47,7 +47,7 @@
 		// Construye la sentencia de inserción de los datos
 		$sentencia="INSERT INTO $tabla (DNI, Nombre, Apellidos, FechaNac, Telefono, Mail, Cuota, Alquiler, Foto, Lider, CLUB_CIF) VALUES ('$d1','$d2','$d3','$d4','$d5','$d6','$d7','$d8','$d9','$d10','$d11');";
 		// Muestra la sentencia que va a ejecutar por si aparecen errores. Luego se puede ocultar esta línea.
-		echo "<br>Sentencia:<br><font color='green'>". $sentencia."</font>";
+	//	echo "<br>Sentencia:<br><font color='green'>". $sentencia."</font>";
 
 		// A continuación ejecuta la sentencia
 		 if (mysqli_query($c,$sentencia)) {			 

@@ -44,7 +44,7 @@
 					<input type="text" name="d10" size="1" value=""><br>
 
 					CIF del club: Z-00000000 si no pertenece a club<br>
-					<input type="text" name="d11" size="10" value=""><br>
+					<input type="text" name="d11" size="10" value="Z-00000000"><br>
 					
 					<!-- Botones del Formulario -->					
 					<hr>

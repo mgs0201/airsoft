@@ -38,7 +38,7 @@
 		// Construye la sentencia de inserción de los datos
 		$sentencia="INSERT INTO $tabla (CIF, Nombre, FechaFund, Descripcion, Camuflaje, Escudo) VALUES ('$d1','$d2','$d3','$d4','$d5','$d6');";
 		// Muestra la sentencia que va a ejecutar por si aparecen errores. Luego se puede ocultar esta línea.
-		echo "<br>Sentencia:<br><font color='green'>". $sentencia."</font>";
+	//	echo "<br>Sentencia:<br><font color='green'>". $sentencia."</font>";
 
 		// A continuación ejecuta la sentencia
 		 if (mysqli_query($c,$sentencia)) {			 
