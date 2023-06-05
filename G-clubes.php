@@ -73,9 +73,14 @@
 				
 				// Recorremos y mostramos el valor de cada columna
 				foreach ($registro as $fila){
-					
-					// Mostramos el valor de cada celda
+					if($i == 5){
+						echo "<td><img src= '".$registro[$i]."' height='100'></td>";
+					}
+					else{
+						// Mostramos el valor de cada celda
 					echo "<td> $registro[$i]</td>";
+					}
+					
 					
 					// Incrementamos el contador de columnas
 					$i++;
@@ -97,7 +102,7 @@
 				echo "</td><td align='center'>";		
 					// Para modificar un registro.
 					// Formulario para enviar los datos
-						echo '<form name="editaruno" method="POST" action="EditarUno.php">';
+						echo '<form name="editaruno" method="POST" action="editarclub.php">';
 						echo '<input type="hidden" name="codigo" value="'.$registro[0].'">';
 						echo '<input type="image" src="estilos/iconos/pencil-square.svg">';
 						echo '</form>';
