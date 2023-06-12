@@ -25,12 +25,12 @@ require_once('marcosup.php');
                 echo '<div class="col-md-8 col-sm-8">';
                 echo '<form name="ficha" action="modificaUsuario2.php" method="POST">';
                 echo "<table class='table table-sm text-info'> ";
-                echo "<tr><td class='text-right text-warning'>CIF: </td><td><h5>", $registro[0], "</h5><input class='form-control' type='hidden' name='idcliente' value='$registro[0]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Nombre: </td><td><input class='form-control' type='text' name='nombre' size='20' value='$registro[1]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Fecha de Fundación: </td><td><input class='form-control' type='text' name='apellidos' size='20' value='$registro[2]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Descripción: </td><td><input class='form-control' type='text' name='nick' size='40' value='$registro[3]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Camuflaje: </td><td><input class='form-control' type='text' name='contrasena' size='40' value='$registro[4]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Escudo: </td><td><input class='form-control' type='text' name='email' size='40' value='$registro[5]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>CIF: </td><td><h5>", $registro[0], "</h5><input class='CIF' class='form-control' type='hidden' name='CIF' value='$registro[0]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Nombre: </td><td><input class='texto' class='form-control' type='text' name='Nombre' size='20' value='$registro[1]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Fecha de Fundación: </td><td><input id='fecha' class='form-control' type='text' name='FechaFund' size='20' value='$registro[2]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Descripción: </td><td><input class='texto' class='form-control' type='text' name='Descripcion' size='40' value='$registro[3]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Camuflaje: </td><td><input class='texto' class='form-control' type='text' name='Camuflaje' size='40' value='$registro[4]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Escudo: </td><td><input id='URL' class='form-control' type='text' name='Escudo' size='40' value='$registro[5]'></td></tr>";
                 echo "</table>";
                 echo '</div>';
             }
@@ -60,6 +60,12 @@ require_once('marcosup.php');
         <div class="col-5 text-center"></div>
     </div>
 </div>
+<script type="text/javascript" src="script/texto.js"></script>
+<script type="text/javascript" src="script/CIF.js"></script>
+<script type="text/javascript" src="script/fecha.js"></script>
+<script type="text/javascript" src="script/URL.js"></script>
+
+
 
 <?php
 // Cargar el marco inferior

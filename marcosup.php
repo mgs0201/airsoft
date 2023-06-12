@@ -13,9 +13,9 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgb(0, 0, 0, 0.8));	background-position: top left;	background-size: 100%;	background-repeat: repeat;" id="1">
     <div class="container"> <a class="navbar-brand text-secondary" href="#">
         <i class="fa d-inline fa-lg">
-          <img src="estilos/escudoTuraniana.png" height="30" title="Escudo del IES Turaniana">
+          <img src="imagenes/rifle.png" height="30" title="Escudo del IES Turaniana">
         </i>
-        <b> IES Turaniana</b>
+        <b>Amigos del Airsoft</b>
       </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar5">
         <span class="navbar-toggler-icon"></span>
       </button>

@@ -12,7 +12,7 @@
         <div class="bg-none text-info col-12 col-sm-12 col-md-7 col-lg-7">			
 			<div class="bg-dark-opaque text-warning" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
 				<h3 class="display-4">Presentación de ASOCIACIÓN de Airsoft Almería</h3>
-				<h4>Plantilla de Proyectos del módulo profesional de Gestion de Bases de Datos, con diseño responsive bajo Bootstrap 4, realizada con Pingendo.</h4>
+				<h4>El único día fácil, fue ayer</h4>
 			</div>
         </div>
        <div class="bg-none col-9 col-sm-9 mx-auto col-md-5 col-lg-5">

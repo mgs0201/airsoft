@@ -25,22 +25,21 @@ require_once('marcosup.php');
                 echo '<div class="col-md-8 col-sm-8">';
                 echo '<form name="ficha" action="modificaUsuario2.php" method="POST">';
                 echo "<table class='table table-sm text-info'> ";
-                echo "<tr><td class='text-right text-warning'>CIF: </td><td><h5>", $registro[0], "</h5><input class='form-control' type='hidden' name='idcliente' value='$registro[0]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Nombre: </td><td><input class='form-control' type='text' name='nombre' size='20' value='$registro[1]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Apellidos: </td><td><input class='form-control' type='text' name='apellidos' size='20' value='$registro[2]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Fecha de Nacimiento: </td><td><input class='form-control' type='text' name='nick' size='40' value='$registro[3]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Teléfono: </td><td><input class='form-control' type='text' name='contrasena' size='40' value='$registro[4]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Mail: </td><td><input class='form-control' type='text' name='email' size='40' value='$registro[5]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Cuaota: </td><td><input class='form-control' type='text' name='email' size='40' value='$registro[6]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Alquiler: </td><td><input class='form-control' type='text' name='email' size='40' value='$registro[7]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Foto: </td><td><input class='form-control' type='text' name='email' size='40' value='$registro[8]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Lider: </td><td><input class='form-control' type='text' name='email' size='40' value='$registro[9]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Miembro de: </td><td><input class='form-control' type='text' name='email' size='40' value='$registro[10]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>DNI: </td><td><h5>", $registro[0], "</h5><input class='DNI' class='form-control' type='hidden' name='DNI' size='9' value='$registro[0]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Nombre: </td><td><input class='texto' class='form-control' type='text' name='Nombre' size='20' value='$registro[1]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Apellidos: </td><td><input class='texto' class='form-control' type='text' name='Apellidos' size='20' value='$registro[2]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Fecha de Nacimiento: </td><td><input id='fecha' class='form-control' type='text' name='FechaNac' size='40' value='$registro[3]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Teléfono: </td><td><input id='tel' class='form-control' type='text' name='Telefono' size='40' value='$registro[4]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Mail: </td><td><input id='mail' class='form-control' type='text' name='Mail' size='40' value='$registro[5]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Cuota: </td><td><input class='bi' class='form-control' type='text' name='Cuota' size='40' value='$registro[6]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Alquiler: </td><td><input class='bi' class='form-control' type='text' name='Alquiler' size='40' value='$registro[7]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Foto: </td><td><input id='URL' class='form-control' type='text' name='Foto' size='40' value='$registro[8]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Lider: </td><td><input class='bi' class='form-control' type='text' name='Lider' size='40' value='$registro[9]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Miembro de: </td><td><input class='CIF' class='form-control' type='text' name='CLUB_CIF' size='40' value='$registro[10]'></td></tr>";
 
                 echo "</table>";
                 echo '</div>';
             }
-
             // Cerramos la conexión con la base de datos
             mysqli_close($c);
             ?>
@@ -66,6 +65,14 @@ require_once('marcosup.php');
         <div class="col-5 text-center"></div>
     </div>
 </div>
+
+<script type="text/javascript" src="script/texto.js"></script>
+<script type="text/javascript" src="script/bi.js"></script>
+<script type="text/javascript" src="script/CIF.js"></script>
+<script type="text/javascript" src="script/fecha.js"></script>
+<script type="text/javascript" src="script/URL.js"></script>
+<script type="text/javascript" src="script/mail.js"></script>
+<script type="text/javascript" src="script/tel.js"></script>
 
 <?php
 // Cargar el marco inferior
