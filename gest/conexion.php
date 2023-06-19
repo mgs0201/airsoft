@@ -22,8 +22,8 @@
 //
 # Configuración para conexión LOCAL
 $Servidor_conexion = "localhost";
-$login_conexion = "root";
-$password_conexion = "";
+$login_conexion = "admin";
+$password_conexion = "admin";
 $base = "AIRSOFT"; // Entre comillas debe aparecer el nombre del esquema de BD.
 
 # Selección de la base de datos y conexión 
