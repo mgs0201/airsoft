@@ -39,7 +39,7 @@
 					<input class='bi' type="text" name="d8" size="1" value=""><br>
 
 					Foto:<br>
-					<input id='URL' type="text" name="d9" size="250" value="" placeholder="URL"><br>
+					<input id='URL' type="text" name="d9" size="45" value="" placeholder="URL"><br>
 
 					Líder de club: 1= Sí, 0= No<br>
 					<input class='bi' type="text" name="d10" size="1" value=""><br>

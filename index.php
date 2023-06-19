@@ -11,7 +11,7 @@
       <div class="row">
         <div class="bg-none text-info col-12 col-sm-12 col-md-7 col-lg-7">			
 			<div class="bg-dark-opaque text-warning" style="	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9));	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
-				<h3 class="display-4">Presentación de ASOCIACIÓN de Airsoft Almería</h3>
+				<h3 class="display-4">App de Gestión Web ASOCIACIÓN de Airsoft Almería</h3>
 				<h4>El único día fácil, fue ayer</h4>
 			</div>
         </div>

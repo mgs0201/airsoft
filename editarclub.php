@@ -23,14 +23,14 @@ require_once('marcosup.php');
             while ($registro = mysqli_fetch_row($resultado)) {
                 // Construimos la entrada para cada fila de la tabla
                 echo '<div class="col-md-8 col-sm-8">';
-                echo '<form name="ficha" action="modificaUsuario2.php" method="POST">';
+                echo '<form name="ficha" action="M-clubes_Visor.php" method="POST">';
                 echo "<table class='table table-sm text-info'> ";
-                echo "<tr><td class='text-right text-warning'>CIF: </td><td><h5>", $registro[0], "</h5><input class='CIF' class='form-control' type='hidden' name='CIF' value='$registro[0]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Nombre: </td><td><input class='texto' class='form-control' type='text' name='Nombre' size='20' value='$registro[1]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Fecha de Fundación: </td><td><input id='fecha' class='form-control' type='text' name='FechaFund' size='20' value='$registro[2]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Descripción: </td><td><input class='texto' class='form-control' type='text' name='Descripcion' size='40' value='$registro[3]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Camuflaje: </td><td><input class='texto' class='form-control' type='text' name='Camuflaje' size='40' value='$registro[4]'></td></tr>";
-                echo "<tr><td class='text-right text-warning'>Escudo: </td><td><input id='URL' class='form-control' type='text' name='Escudo' size='40' value='$registro[5]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>CIF: </td><td><h5>", $registro[0], "</h5><input class='CIF' class='form-control' type='hidden' name='d1' value='$registro[0]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Nombre: </td><td><input class='texto' class='form-control' type='text' name='d2' size='20' value='$registro[1]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Fecha de Fundación: </td><td><input id='fecha' class='form-control' type='text' name='d3' size='20' value='$registro[2]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Descripción: </td><td><input class='texto' class='form-control' type='text' name='d4' size='40' value='$registro[3]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Camuflaje: </td><td><input class='texto' class='form-control' type='text' name='d5' size='40' value='$registro[4]'></td></tr>";
+                echo "<tr><td class='text-right text-warning'>Escudo: </td><td><input id='URL' class='form-control' type='text' name='d6' size='40' value='$registro[5]'></td></tr>";
                 echo "</table>";
                 echo '</div>';
             }
@@ -43,8 +43,8 @@ require_once('marcosup.php');
     <div class="row py-1 bg-dark text-info">
         <div class="col-1 text-center"></div>
         <div class="col-3 text-center">
-            <form name="confirmarForm" action="editarclub.php" method="post">
-                <input type="hidden" name="CIF" value="<?php echo $ID; ?>">
+            <form name="confirmarForm" action="M-clubes_Visor.php" method="post">
+                <input type="hidden" name="d1" value="<?php echo $ID; ?>">
                 <p class="close">Confirmar cambios
                     <input type="image" src="estilos/confirmar.png" name="confirmar" height="30" alt="Cambiar">
                 </p>

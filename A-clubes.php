@@ -23,13 +23,13 @@
 					<input id='fecha' type="text" name="d3" size="20" value="" placeholder="año-mes-día"><br>
                     <!-- Dato 4 -->
                     Descripción:<br>
-					<input class='texto' type="text" name="d4" size="200" value=""><br>
+					<input class='texto' type="text" name="d4" size="45" value=""><br>
 					<!-- Dato 5-->
 					Camuflaje:<br>
 					<input class='texto' type="text" name="d5" size="20" value=""><br>
 					<!-- Dato 6-->
 					Escudo:<br>
-					<input id='URL' type="text" name="d6" s-ize="250" value="" placeholder="URL a foto"><br>
+					<input id='URL' type="text" name="d6" s-ize="45" value="" placeholder="URL a foto"><br>
 					<!-- Botones del Formulario -->					
 					<hr>
 					<input type="submit" value="ENVIAR">
